@@ -78,6 +78,8 @@
         <input type="checkbox" name="obersavacao[]" value="seletividade alimentar"> seletividade alimentar <br><br>
         <input type="checkbox" name="obersavacao[]" value="Nenhuma"> Nenhuma <br>
 
+        <input type="submit" value="Salvar">
+
 
 
     </form>
