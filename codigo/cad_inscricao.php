@@ -71,8 +71,14 @@
             ?>
         </select> <br><br>
 
-        Observação:
-        <input type="checkbox" name="obersavacao[]" value="Alergia a glutem"> alergia <br>
+        Observação: <br>
+        <input type="checkbox" name="obersavacao[]" value="Alergia a glutem"> alergia a glutem <br><br>
+        <input type="checkbox" name="obersavacao[]" value="intolerante a lactose"> intolerante a lactose <br><br>
+        <input type="checkbox" name="obersavacao[]" value="remedio de uso continuo"> remedio de uso continuo <br><br>
+        <input type="checkbox" name="obersavacao[]" value="seletividade alimentar"> seletividade alimentar <br><br>
+        <input type="checkbox" name="obersavacao[]" value="Nenhuma"> Nenhuma <br>
+
+
 
     </form>
 </body>
