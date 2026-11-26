@@ -71,27 +71,8 @@
             ?>
         </select> <br><br>
 
-        Observação: <br>
-        <select name="idobservacao">
-            <?php
-            require_once "conexao.php";
-
-            $sql = "SELECT * FROM observacao";
-
-            $comando = mysqli_prepare($conexao, $sql);
-            mysqli_stmt_execute($comando);
-            $resultado = mysqli_stmt_get_result($comando);
-
-            while ($linha = mysqli_fetch_array($resultado)) {
-                $idobservacao = $linha['idobservacao'];
-                $tipo = $linha['tipo'];
-
-                echo "<option value='$idobservacao'>$tipo</option>";
-            }
-            ?>
-        </select> <br><br>
-
-        <input type="submit" value="Salvar">
+        Observação:
+        <input type="checkbox" name="obersavacao[]" value="Alergia a glutem"> alergia <br>
 
     </form>
 </body>
