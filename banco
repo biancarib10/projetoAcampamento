@@ -102,3 +102,26 @@ SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
+INSERT INTO funcao (tipo) VALUES
+('Coordenador'),
+('Palestrante'),
+('Cozinheiro'),
+('Auxiliar de cozinha'),
+('Enfermeiro'),
+('Organizador'),
+('Animador'),
+('Segurança'),
+('Responsável pela limpeza'),
+('Músico');
+
+INSERT INTO acampamento (nome, ano) VALUES
+('Acampamento Jovens em Cristo', 2022),
+('Acampamento Vida Nova', 2023),
+('Acampamento Renovados', 2024),
+('Acampamento Conexão', 2025),
+('Acampamento Adrenalina', 2026),
+('Acampamento Monte Sião', 2022),
+('Acampamento Nova Geração', 2023),
+('Acampamento Despertar', 2024),
+('Acampamento Recomeço', 2025),
+('Acampamento Firmes na Fé', 2026);
