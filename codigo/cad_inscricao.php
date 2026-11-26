@@ -26,6 +26,7 @@
                 $nome = $linha['nome'];
 
                 echo "<option value='$idparticipante'>$nome</option>";
+                
             }
             ?>
         </select> <br><br>
