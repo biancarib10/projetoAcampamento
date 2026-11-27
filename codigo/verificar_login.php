@@ -1,3 +1,4 @@
+
 <?php
 require_once "conexao.php";
 
@@ -31,3 +32,4 @@ if ($quantidade == 1) {
 } else {
     header("Location: index.php");
 }
+?>
