@@ -51,6 +51,7 @@ require_once "conexao.php";
             echo "Telefone: $telefone";
 
             echo "</div>";
+            echo <a href="editar_participante.php?idparticipante=<?php echo $participante['idparticipante']; ?>">Editar</a>
         }
         ?>
 

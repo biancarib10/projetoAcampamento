@@ -1,15 +1,6 @@
-
 <?php
 require_once "verificar_sessao.php";
 require_once "conexao.php";
-
-$sql = "SELECT * FROM usuario";
-
-$comando = mysqli_prepare($conexao, $sql);
-
-mysqli_stmt_execute($comando);
-
-$resultado = mysqli_stmt_get_result($comando);
 ?>
 
 <!DOCTYPE html>
@@ -17,43 +8,55 @@ $resultado = mysqli_stmt_get_result($comando);
 
 <head>
     <meta charset="UTF-8">
-    <title>Usuários cadastrados</title>
-    <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Usuários</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <h1>Usuários cadastrados</h1>
+    <h2>Lista de Usuários</h2>
 
-    <div class="lista">
-
-        <a href="form_usuario.php">Cadastrar usuário</a>
-        <a href="home.php">Início</a>
-
-        <br><br>
-        <hr>
+    <div class="usuarios">
 
         <?php
-        while ($usuario = mysqli_fetch_array($resultado)) {
-        ?>
 
-            Nome: <?php echo $usuario['nome']; ?>
-            <br>
+        $sql = "SELECT * FROM usuario";
 
-            E-mail: <?php echo $usuario['email']; ?>
-            <br>
+        $comando = mysqli_prepare($conexao, $sql);
+        mysqli_stmt_execute($comando);
+        $usuarios = mysqli_stmt_get_result($comando);
 
-            <a href="editar_usuario.php?idusuario=<?php echo $usuario['idusuario']; ?>">
-                Editar
-            </a>
+        while ($usuario = mysqli_fetch_array($usuarios)) {
 
-            <hr>
+            $idusuario = $usuario['idusuario'];
+            $nome = $usuario['nome'];
+            $email = $usuario['email'];
 
-        <?php
+            echo "<div class='usuario'>";
+
+            echo "ID: $idusuario";
+            echo "<br>";
+            echo "Nome: $nome";
+            echo "<br>";
+            echo "E-mail: $email";
+            echo "<br>";
+
+            echo "</div>";
+            echo <a href="editar_usuario.php?idusuario=<?php echo $usuario['idusuario']; ?>">Editar</a>
+            echo "<hr>";
+
         }
         ?>
 
     </div>
+
+    <br>
+    <a href="form_usuario.php">Cadastrar usuário</a>
+    <br>
+    <a href="home.php">Voltar</a>
 
 </body>
 
