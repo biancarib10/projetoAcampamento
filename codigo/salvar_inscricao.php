@@ -25,3 +25,4 @@ foreach ($observacao as $a) {
     mysqli_stmt_bind_param($comando, "ii", $idinscricao, $a);
     mysqli_stmt_execute($comando);
 }
+header("Location: cad_inscricao.php");
