@@ -13,8 +13,8 @@ require_once "verificar_sessao.php";
 
 <body>
     <h1>Início</h1>
-        <a href="form_participante.php">FAÇA SUA INSCRIÇÃO COMO PARTICIPANTE</a>
-        <a href="cad_inscricao.php">FAÇA SUA INSCRIÇÃO PARA O ACAMPAMENTO</a>
+        <a href="form_participante.php">FAÇA SUA INSCRIÇÃO COMO PARTICIPANTE</a><br>
+        <a href="cad_inscricao.php">FAÇA SUA INSCRIÇÃO PARA O ACAMPAMENTO</a><br>
         <a href="sair.php">Sair</a>
 </body>
 
