@@ -5,16 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acampamento</title>
+    <link rel="stylesheet" href="css.css">
 </head>
 
 <body>
-    <ul>
-        <a href="form_participante.php">Cadastro do Participante</a> <br><br>
-        <a href="cad_inscricao.php">Cadastro de Inscrição</a>
-        <a href="listar_participante.php">listar participante</a>
-        
-    
-    </ul>
+    <form action="verificar_login.php" method="post">
+        E-mail: <br>
+        <input type="text" name="email"> <br><br>
+        Senha: <br>
+        <input type="text" name="senha"> <br><br>
+
+        <input type="submit" value="Logar"> <br>
+
+        <a href="form_usuario.php">Não tem conta? Crie agora!</a>
+    </form>
 </body>
 
 </html>
