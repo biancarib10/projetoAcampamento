@@ -11,6 +11,7 @@
     <ul>
         <a href="form_participante.php">Cadastro do Participante</a> <br><br>
         <a href="cad_inscricao.php">Cadastro de Inscrição</a>
+        <a href="listar_participante.php">listar participante</a>
         
     
     </ul>
