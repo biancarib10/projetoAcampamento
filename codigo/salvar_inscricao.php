@@ -20,8 +20,8 @@ $observacao = $_POST['observacao'];
 require_once "conexao.php";
 
 foreach ($observacao as $a) {
-    $sql = "INSERT INTO inscricao_observacao (idinscricao, idobservacao) VALUES (?, ?)";
+    $sql = "INSERT INTO observacao (inscricao_idinscricao, tipo, idobservacao) VALUES (?, ?, ?);";
     $comando = mysqli_prepare($conexao, $sql);
-    mysqli_stmt_bind_param($comando, "ii", $a, $idobservacao);
+    mysqli_stmt_bind_param($comando, "isi", $idinscricao , $tipo, $a);
     mysqli_stmt_execute($comando);
 }
