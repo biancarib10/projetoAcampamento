@@ -9,6 +9,7 @@ require_once "conexao.php";
 <head>
     <meta charset="UTF-8">
     <title>Cadastro de Participante</title>
+    <link rel="stylesheet" href="css.css">
 </head>
 
 <body>

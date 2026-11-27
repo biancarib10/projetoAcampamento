@@ -1,0 +1,23 @@
+
+body {
+    background-color: #bff8c1;
+    font-family: Arial, sans-serif;
+}
+
+/* SOMENTE A ÁREA DO BANNER */
+.banner {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* IMAGEM */
+.banner img {
+    width: 700px;
+    height: auto;
+    max-width: 90%;
+}
+

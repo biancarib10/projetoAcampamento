@@ -10,6 +10,9 @@
 
 <body>
     <form action="verificar_login.php" method="post">
+        <header class="banner">
+        <img src="banner.png" alt="Acampamento Maanaim">
+        </header>
         E-mail: <br>
         <input type="text" name="email"> <br><br>
         Senha: <br>
